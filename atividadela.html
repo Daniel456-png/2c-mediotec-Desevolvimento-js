@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Objetos e Arrays</title>
+</head>
+<body>
+
+    <h1>Veja o resultado no console</h1>
+
+    <script>
+
+       
+        let pessoa = {
+            nome: "Carlos",
+            idade: 16,
+            cidade: "Recife"
+        };
+
+       
+        console.log("Nome:", pessoa.nome);
+
+
+   
+        pessoa.idade = 17;
+
+    
+        console.log("Pessoa atualizada:");
+        console.log(pessoa);
+
+
+
+        pessoa.profissao = "Estudante";
+
+        console.log("Pessoa com profissão:");
+        console.log(pessoa);
+
+
+        let carro = {
+            marca: "Toyota",
+            modelo: "Corolla",
+            ano: 2022,
+            cor: "Preto"
+        };
+
+        console.log("Carro:");
+        console.log(carro);
+
+
+        let alunos = [
+            {
+                nome: "Ana",
+                nota: 8
+            },
+            {
+                nome: "Lucas",
+                nota: 7
+            },
+            {
+                nome: "Marina",
+                nota: 9
+            }
+        ];
+
+        
+        console.log("Nota do primeiro aluno:");
+        console.log(alunos[0].nota);
+
+
+      
+        alunos.push({
+            nome: "Pedro",
+            nota: 10
+        });
+
+        console.log("Array atualizado:");
+        console.log(alunos);
+
+
+   
+        console.log("Nome dos alunos:");
+
+        for(let i = 0; i < alunos.length; i++) {
+            console.log(alunos[i].nome);
+        }
+
+    </script>
+
+</body>
+</html>
