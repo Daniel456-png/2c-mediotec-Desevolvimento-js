@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios DOM e Eventos</title>
+</head>
+<body>
+
+    <!-- EXERCÍCIO 1 -->
+    <h1 id="titulo1">Olá Mundo</h1>
+
+    <hr>
+
+    <!-- EXERCÍCIO 2 -->
+    <p id="paragrafo1">Meu parágrafo</p>
+
+    <hr>
+
+    <!-- EXERCÍCIO 3 -->
+    <button id="botao1">Clique aqui</button>
+
+    <hr>
+
+    <!-- EXERCÍCIO 4 -->
+    <button id="dark">Dark Mode</button>
+    <button id="light">Light Mode</button>
+
+    <hr>
+
+    <!-- EXERCÍCIO 5 -->
+    <h1 id="titulo2">Meu Título</h1>
+
+    <p id="paragrafo2">
+        Esse é meu parágrafo.
+    </p>
+
+    <button id="botao2">
+        Alterar Página
+    </button>
+
+
+    <script>
+
+        // =========================
+        // EXERCÍCIO 1
+        // =========================
+
+        let titulo1 = document.getElementById("titulo1");
+
+        titulo1.innerText = "Bem-vindo ao JavaScript";
+
+
+        // =========================
+        // EXERCÍCIO 2
+        // =========================
+
+        let paragrafo1 = document.getElementById("paragrafo1");
+
+        paragrafo1.style.color = "blue";
+
+        paragrafo1.style.fontSize = "30px";
+
+
+        // =========================
+        // EXERCÍCIO 3
+        // =========================
+
+        let botao1 = document.getElementById("botao1");
+
+        botao1.addEventListener("click", function() {
+
+            alert("Você clicou no botão!");
+
+        });
+
+
+        // =========================
+        // EXERCÍCIO 4
+        // =========================
+
+        let dark = document.getElementById("dark");
+        let light = document.getElementById("light");
+
+        dark.addEventListener("click", function() {
+
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+
+        });
+
+        light.addEventListener("click", function() {
+
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
+
+        });
+
+
+        // =========================
+        // EXERCÍCIO 5
+        // =========================
+
+        let titulo2 = document.getElementById("titulo2");
+
+        let paragrafo2 = document.getElementById("paragrafo2");
+
+        let botao2 = document.getElementById("botao2");
+
+        botao2.addEventListener("click", function() {
+
+            titulo2.innerText = "Título Alterado!";
+
+            paragrafo2.innerText = "O parágrafo também foi alterado.";
+
+            document.body.style.backgroundColor = "purple";
+
+            document.body.style.color = "white";
+
+        });
+
+    </script>
+
+</body>
+</html>
